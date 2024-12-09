@@ -8,5 +8,6 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
+    // IBOutlet for Artist Label
     @IBOutlet var artistNamelabel: UILabel!
 }
