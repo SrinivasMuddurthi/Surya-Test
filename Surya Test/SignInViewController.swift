@@ -27,7 +27,7 @@ class SignInViewController: UIViewController {
         let mobile = mobileNumber.text
         let otp = otpNumber.text
     
-        if mobile?.count != 5 {
+        if mobile?.count != 10 {
             mobileNumber.becomeFirstResponder()
             
             var mobileNumberAlert = UIAlertController(title: "Invalid", message: "Please enter Mobile Number", preferredStyle: .alert)
@@ -36,7 +36,7 @@ class SignInViewController: UIViewController {
             mobileNumberAlert.addAction(cancelAction)
             self.present(mobileNumberAlert, animated: true)
             
-        } else if otp?.count != 4 {
+        } else if otp?.count != 6 {
             otpNumber.becomeFirstResponder()
             
             var otpNumberAlert = UIAlertController(title: "Invalid", message: "Please enter otp", preferredStyle: .alert)
